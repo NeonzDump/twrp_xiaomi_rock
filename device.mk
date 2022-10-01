@@ -14,13 +14,13 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/xiaomi/fleur
+LOCAL_PATH := device/xiaomi/rock
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # API
-PRODUCT_SHIPPING_API_LEVEL := 30
+PRODUCT_SHIPPING_API_LEVEL := 31
 
 # Virtual A/B
 ENABLE_VIRTUAL_AB := true
@@ -46,7 +46,7 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-impl.recovery \
     android.hardware.boot@1.1-impl \
-    bootctrl.mt6781.recovery
+    bootctrl.mt6789.recovery
 
 # Update Engine
 PRODUCT_PACKAGES += \
@@ -72,7 +72,7 @@ PRODUCT_PACKAGES += \
 	android.hardware.gatekeeper@1.0-service
 
 PRODUCT_COPY_FILES += \
-	$(OUT_DIR)/target/product/fleur/vendor/bin/hw/android.hardware.gatekeeper@1.0-service:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/android.hardware.gatekeeper@1.0-service
+	$(OUT_DIR)/target/product/rock/vendor/bin/hw/android.hardware.gatekeeper@1.0-service:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/android.hardware.gatekeeper@1.0-service
 
 # Additional Libraries
 TARGET_RECOVERY_DEVICE_MODULES += \
